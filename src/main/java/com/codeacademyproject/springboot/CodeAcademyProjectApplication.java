@@ -1,0 +1,13 @@
+package com.codeacademyproject.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CodeAcademyProjectApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CodeAcademyProjectApplication.class, args);
+    }
+
+}

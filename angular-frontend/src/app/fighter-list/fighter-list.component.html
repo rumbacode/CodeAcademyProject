@@ -1,0 +1,27 @@
+<div class = "container">
+  <h2> Fighter List</h2>
+  <table class = "table table-striped table-bordered">
+    <thead>
+    <tr>
+      <th> Position </th>
+      <th> Full Name</th>
+      <th> Weight</th>
+      <th> Photo</th>
+      <th> Actions </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let fighter of fighters">
+      <td> {{ fighter.position }} </td>
+      <td> {{ fighter.fullName }} </td>
+      <td> {{ fighter.weight }} </td>
+      <td> {{fighter.photo}}</td>
+      <td class="d-flex justify-content-center">
+        <button (click) = "fighterDetails(fighter.id)" class = "btn btn-primary" > View</button>
+        <button (click) = "updateFighter(fighter.id)" class = "btn btn-primary" style="margin-left: 10px"> Update</button>
+        <button (click) = "deleteFighter(fighter.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
